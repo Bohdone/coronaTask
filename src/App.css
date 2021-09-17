@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('~antd/dist/antd.css');
+
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-table-wrapper {
+    margin: 0 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-table-tbody > tr {
+    font-size: 24px;
+    margin: 20px 0;
+    height: 80px;
+    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);*/
+    border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan]):before {
+
 }
 
-.App-link {
-  color: #61dafb;
+.ant-table-tbody a {
+    color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-table-cell:nth-child(1) {
+    width: 80px;
+}
+
+.ant-table-cell:nth-child(2) {
+    width: 1160px;
+}
+
+.ant-table-thead > tr > th {
+    height: 80px;
+    background: #2196F3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+td {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.titleTD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    text-indent: 21px;
+}
+
+.alignStart {
+    justify-content: flex-start;
+
+}
+
+tr td:first-child a, thead tr th:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0px;
+    border-radius: 20px 0 0 20px !important;
+}
+
+tr td:last-child a, thead tr th:last-child {
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.ant-modal-content {
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+
+.ant-modal-footer button:first-child {
+    display: none;
+}
+
+.ant-modal-footer {
+    border: none;
+    text-align: center;
+}
+
+.ant-btn-primary {
+    width: 171px;
+    height: 49px;
+    border-radius: 20px;
+    font-size: 24px;
 }
