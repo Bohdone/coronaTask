@@ -18,6 +18,7 @@ function App() {
                     setIsModalVisible(true);
                 }}>{text}
                 </a></div>,
+            sorter: (a, b) => a.Id - b.Id
         },
         {
             title: 'Country',
@@ -28,6 +29,7 @@ function App() {
                     setIsModalVisible(true);
                 }}>{text}
                 </a></div>,
+            sorter: (a, b) => a.Country > b.Country
         },
         {
             title: 'Total Confirmed',
@@ -38,6 +40,7 @@ function App() {
                     setIsModalVisible(true);
                 }}>{text}
                 </a></div>,
+            sorter: (a, b) => a.TotalConfirmed - b.TotalConfirmed
 
         }])
     const [data, setData] = useState([])
